@@ -78,19 +78,8 @@ def create_blast_obj(infile:str=None,outfmt='7'):
     else:
         raise ValueError(f"ERROR: {outfmt} not a valid outfmt")
 
-class BlastResults:
-    """
-    """
-    def __init__(self,alignments:list=None):
-        self._qmap = {}
-        self._rmap = {}
-        self.results = []
-        if alignments is None:
-            self._alignments = []
-        else:
-            self._alignments = alignments
-        
 
+        
 class BlastAlignment:
     """
     """
